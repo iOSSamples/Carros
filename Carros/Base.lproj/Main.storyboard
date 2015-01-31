@@ -7,7 +7,7 @@
         <!--Root View Controller-->
         <scene sceneID="R7C-Zo-rnr">
             <objects>
-                <tableViewController id="TJh-KB-F70" sceneMemberID="viewController">
+                <tableViewController id="TJh-KB-F70" customClass="CarrosTableViewController" customModule="Carros" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="k64-Kf-CNd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb4-4i-kvP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="525"/>
+            <point key="canvasLocation" x="1032" y="525"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GKN-uk-sEi">
