@@ -61,7 +61,13 @@ class CarrosTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
-
+        let montadoraDict = carrosArray[indexPath.section]
+        
+        if let carros = montadoraDict["Carros"] as? [String]{
+            cell.textLabel?.text = carros[indexPath.row]
+            cell.imageView?.image = UIImage(named: "carro")
+        }
+        
         return cell
     }
 

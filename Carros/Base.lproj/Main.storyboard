@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Carros-->
         <scene sceneID="R7C-Zo-rnr">
             <objects>
                 <tableViewController id="TJh-KB-F70" customClass="CarrosTableViewController" customModule="Carros" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,11 +25,11 @@
                             <outlet property="delegate" destination="TJh-KB-F70" id="Luo-nP-VR2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="G8O-3V-5j9"/>
+                    <navigationItem key="navigationItem" title="Carros" id="G8O-3V-5j9"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb4-4i-kvP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032" y="525"/>
+            <point key="canvasLocation" x="877" y="369"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GKN-uk-sEi">
