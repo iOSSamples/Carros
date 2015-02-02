@@ -66,6 +66,7 @@ class CarrosTableViewController: UITableViewController {
         if let carros = montadoraDict["Carros"] as? [String]{
             cell.textLabel?.text = carros[indexPath.row]
             cell.imageView?.image = UIImage(named: "carro")
+            cell.detailTextLabel?.text = "Texto secundário"
         }
         
         return cell
@@ -81,6 +82,9 @@ class CarrosTableViewController: UITableViewController {
         return nil
     }
     
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 70
+    }
 
     /*
     // Override to support conditional editing of the table view.
