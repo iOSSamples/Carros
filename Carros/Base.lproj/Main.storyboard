@@ -12,6 +12,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bandeirada" id="IDr-Zh-yYd">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="EWS-99-R4J" detailTextLabel="vSS-0F-rIo" style="IBUITableViewCellStyleSubtitle" id="bp5-wY-Bf5">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -62,4 +66,7 @@
             <point key="canvasLocation" x="129" y="525"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bandeirada" width="320" height="50"/>
+    </resources>
 </document>
