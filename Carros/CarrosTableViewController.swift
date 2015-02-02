@@ -67,6 +67,7 @@ class CarrosTableViewController: UITableViewController {
             cell.textLabel?.text = carros[indexPath.row]
             cell.imageView?.image = UIImage(named: "carro")
             cell.detailTextLabel?.text = "Texto secundário"
+            cell.accessoryType = .DetailButton
         }
         
         return cell
@@ -84,6 +85,24 @@ class CarrosTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 70
+    }
+    
+    override func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
+        
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        
+        var alert = UIAlertController (
+            title: "Carro selecionado:",
+            message:cell?.textLabel?.text,
+            preferredStyle: .Alert)
+        
+        alert.addAction(UIAlertAction(
+            title: "OK",
+            style: .Default,
+            handler: nil))
+        
+        presentViewController(alert, animated: true, completion: nil)
+
     }
 
     /*
