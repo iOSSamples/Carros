@@ -65,6 +65,15 @@ class CarrosTableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    
+        if let nomeMontadora = carrosArray[section]["Montadora"] as? String{
+            
+            return nomeMontadora
+        }
+        
+        return nil
+    }
     
 
     /*
