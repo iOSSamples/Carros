@@ -111,6 +111,10 @@ class CarrosTableViewController: UITableViewController {
 
     }
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("paraDetalheCarroSegue", sender: indexPath)
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -146,14 +150,22 @@ class CarrosTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        
+        if let index = sender as? NSIndexPath{
+            
+            if let cell = tableView.cellForRowAtIndexPath(index){
+
+                let vc = segue.destinationViewController as DetalheCarroViewController
+                
+                vc.nomeCarro = cell.textLabel?.text
+            }
+        }
     }
-    */
+
 
 }

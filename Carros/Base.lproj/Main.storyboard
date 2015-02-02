@@ -44,10 +44,50 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Carros" id="G8O-3V-5j9"/>
+                    <connections>
+                        <segue destination="bwv-MD-iv3" kind="show" identifier="paraDetalheCarroSegue" id="xJT-uG-ARP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb4-4i-kvP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="877" y="369"/>
+            <point key="canvasLocation" x="73" y="179"/>
+        </scene>
+        <!--Detalhe Carro View Controller-->
+        <scene sceneID="p1d-Jb-qP6">
+            <objects>
+                <viewController id="bwv-MD-iv3" customClass="DetalheCarroViewController" customModule="Carros" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nqG-eV-loF"/>
+                        <viewControllerLayoutGuide type="bottom" id="lFu-9F-udG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TO2-Ig-SFa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Carro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cf-fh-HNC">
+                                <rect key="frame" x="164" y="247" width="272" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="5oo-4a-8EX"/>
+                                    <constraint firstAttribute="height" constant="106" id="JfY-Vd-S5J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="6cf-fh-HNC" secondAttribute="centerY" id="Bxv-zh-6af"/>
+                            <constraint firstAttribute="centerX" secondItem="6cf-fh-HNC" secondAttribute="centerX" id="uri-nE-z61"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nomeCarroLabel" destination="6cf-fh-HNC" id="9Nk-do-G0K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aur-bS-fjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="179"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GKN-uk-sEi">
@@ -63,7 +103,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pUz-Of-Mee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="525"/>
+            <point key="canvasLocation" x="-671" y="179"/>
         </scene>
     </scenes>
     <resources>
