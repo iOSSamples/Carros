@@ -38,18 +38,25 @@ class CarrosTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return carrosArray.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
         // Return the number of rows in the section.
+
+        //pega o dicionário da montadora, usando a seção como índice
+        let montadoraDict = carrosArray[section]
+        
+        //pega os carros da montadora, fazendo um cast para Array de strings
+        if let carrosPorMontadora = montadoraDict["Carros"] as? [String]{
+            return carrosPorMontadora.count
+        }
+        
         return 0
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
 
@@ -57,7 +64,8 @@ class CarrosTableViewController: UITableViewController {
 
         return cell
     }
-    */
+
+    
 
     /*
     // Override to support conditional editing of the table view.
