@@ -104,6 +104,12 @@ class CarrosTableViewController: UITableViewController {
         presentViewController(alert, animated: true, completion: nil)
 
     }
+    
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footer = UIImageView(image: UIImage(named: "footer"))
+        return footer
+
+    }
 
     /*
     // Override to support conditional editing of the table view.
