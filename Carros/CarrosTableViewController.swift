@@ -9,6 +9,7 @@ import UIKit
 
 class CarrosTableViewController: UITableViewController {
 
+ 
     //Array das montadoras
     var carrosArray : [[String:AnyObject]] = [
         //Dicionario com carros da Honda
@@ -58,7 +59,7 @@ class CarrosTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as CarroTableViewCell
 
         // Configure the cell...
         let montadoraDict = carrosArray[indexPath.section]
@@ -68,6 +69,7 @@ class CarrosTableViewController: UITableViewController {
             cell.imageView?.image = UIImage(named: "carro")
             cell.detailTextLabel?.text = "Texto secundário"
             cell.accessoryType = .DetailButton
+            cell.label.text = "2015"
         }
         
         return cell

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		240284C81A80400C004CED4D /* DetalheCarroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240284C71A80400C004CED4D /* DetalheCarroViewController.swift */; };
+		240284CA1A804B1B004CED4D /* CarroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240284C91A804B1B004CED4D /* CarroTableViewCell.swift */; };
 		2424A2551A7D627F00C241D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424A2541A7D627F00C241D2 /* AppDelegate.swift */; };
 		2424A25A1A7D627F00C241D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424A2581A7D627F00C241D2 /* Main.storyboard */; };
 		2424A25C1A7D627F00C241D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424A25B1A7D627F00C241D2 /* Images.xcassets */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		240284C71A80400C004CED4D /* DetalheCarroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheCarroViewController.swift; sourceTree = "<group>"; };
+		240284C91A804B1B004CED4D /* CarroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarroTableViewCell.swift; sourceTree = "<group>"; };
 		2424A24F1A7D627F00C241D2 /* Carros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2424A2531A7D627F00C241D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2424A2541A7D627F00C241D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				2424A2541A7D627F00C241D2 /* AppDelegate.swift */,
 				2424A2741A7D64B200C241D2 /* CarrosTableViewController.swift */,
 				240284C71A80400C004CED4D /* DetalheCarroViewController.swift */,
+				240284C91A804B1B004CED4D /* CarroTableViewCell.swift */,
 				2424A2581A7D627F00C241D2 /* Main.storyboard */,
 				2424A25B1A7D627F00C241D2 /* Images.xcassets */,
 				2424A25D1A7D627F00C241D2 /* LaunchScreen.xib */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2424A2551A7D627F00C241D2 /* AppDelegate.swift in Sources */,
+				240284CA1A804B1B004CED4D /* CarroTableViewCell.swift in Sources */,
 				2424A2751A7D64B200C241D2 /* CarrosTableViewController.swift in Sources */,
 				240284C81A80400C004CED4D /* DetalheCarroViewController.swift in Sources */,
 			);

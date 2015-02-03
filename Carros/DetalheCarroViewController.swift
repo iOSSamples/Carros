@@ -2,7 +2,6 @@
 //  DetalheCarroViewController.swift
 //  Carros
 //
-//  Created by Juliana Chahoud on 2/2/15.
 //  Copyright (c) 2015 Example. All rights reserved.
 //
 
