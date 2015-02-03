@@ -27,7 +27,7 @@ class CarrosTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+         self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -123,17 +123,30 @@ class CarrosTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // Override to support editing the table view.
+    
+    //Edição dos itens da tabela
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+
         if editingStyle == .Delete {
-            // Delete the row from the data source
+            
+            //Cria uma cópia do array de carros
+            if var array = carrosArray[indexPath.section]["Carros"]? as? [String] {
+               
+                //remove o item
+                array.removeAtIndex(indexPath.row)
+
+                //atribui o novo array no dicionário da montadora
+                carrosArray[indexPath.section]["Carros"] = array
+            }
+
+            //Apaga linha da tabela
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+
         } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+            // adiciona um item no array e uma nova linha na tabela
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
